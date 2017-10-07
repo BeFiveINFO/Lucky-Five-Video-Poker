@@ -1,0 +1,181 @@
+#controls{position:absolute;width:auto;min-width:300px;height:auto;left:50%;top:50%;z-index:1;transform:translate(-50%, -50%)}
+#status{position:absolute;z-index:1;}
+
+.value {}
+
+html, body {
+	background: #024202;
+}
+
+.footer {
+	margin-top: 60px;
+	text-align: center;
+	color: #cecece;
+	font-family: 'Bungee', cursive;
+}
+
+.footer a {
+	text-decoration: none;
+	color: #cecece;
+	}
+
+body button{font-family: 'Bungee', cursive;background-color:black;color:white;padding:6px;text-align:center;display:inline-block;cursor:pointer;margin:3px;border:none;outline:none;font-size:1em}
+
+body button:hover{background-color:white;color:#7F33ED}
+body button:hover:active{color:#22DBC0}
+
+div#content {
+	margin: auto;
+   max-width: 636px;
+    padding: 10px;
+}
+
+textarea {
+	width: 300px;
+	height: 100px;
+}
+
+/**
+ * Display
+ */
+div#display {vertical-align: top; color: white;}
+
+div#display span.label {color: #00c0d0}
+
+div#display div.left { display: inline-block;width: 20%;vertical-align: top;
+	font-family: 'Bungee', cursive;}
+div#display div.center { display: inline-block;width: 57%;text-align: center;vertical-align: top;
+	-webkit-text-stroke: 1px white;vertical-align: middle;font-family: 'Bungee', cursive;line-height: 42px;}
+div#display div.center.good-news {font-family: 'Bungee Inline', cursive;font-size: 36px;color: red;vertical-align: top;line-height: normal;}
+
+div#display div.right { display: inline-block;width: 20%;vertical-align: top;text-align: right;
+	font-family: 'Bungee', cursive;}
+.left-margin {margin-left: 15px;}
+
+/**
+ * Button
+ */
+div#control-panel {
+	text-align: center;
+}
+
+/**
+ * Pay Table
+ */
+div#paytable {
+	max-width: 636px;
+	margin-bottom : 10px;
+}
+
+
+div#paytable table {
+	width: 100%;
+	border: solid 2px #00c0d0;
+	color: #fff400;
+	font-family: 'Bungee', cursive;
+	background-color: #002cc7;
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+/*
+div#paytable table td {border-spacing:none}*/
+div#paytable table td.hand-name {
+	background-color: #0024a3;
+}
+
+div#paytable table td.current{
+	background: red;
+}
+
+div#paytable table td.win{
+	background: #fff400;
+	color: red;
+}
+
+div#paytable table td[class^=col-] {
+	border-left: solid 2px #00c0d0;
+	border-right: solid 2px #00c0d0;
+}
+
+div#paytable table td:not(.hand-name) {
+	text-align: center;
+}
+
+/**
+ * Current hand and win
+ */
+
+
+/**
+ * Card
+ */
+div.card-holder {
+
+}
+
+button.hold-button {
+	display: block;
+	margin: 20px auto;
+}
+
+button.hold-button.held {
+	display: block;
+	margin: 20px auto;
+}
+
+button.inactive {
+	cursor: default;
+	background-color: #CCCCCC;
+}
+
+button.inactive:hover {
+	color: #FFFFFF;
+}
+
+button.active {
+	background-color: black;
+}
+
+div.card-unit {
+	display: inline-block;
+}
+div.playing-card {
+	margin-right: 5px;
+}
+
+div.playing-card img,
+div.playing-card
+{
+	width: 118px;
+	height: 170px;
+}
+
+div.playing-card img.card-face,
+div.playing-card img.card-back {
+	position: absolute;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+	border: 4px white solid;
+}
+
+div.playing-card.hit img.card-face {
+	-webkit-animation: border-pulsate 2s infinite;
+    animation: border-pulsate 2s infinite;
+}
+
+/**
+ * Animation
+ */
+@keyframes border-pulsate {
+    0%   { border-color: rgba(255, 0, 0, 1); }
+    50%  { border-color: rgba(255, 0, 0, 0.5); }
+    100% { border-color: rgba(255, 0, 0, 1); }
+}
+
+/* Flaired edges, by Tomas Theunissen */
+
+hr.style-seven {
+	border:0;
+    border-bottom:medium double #999;
+}

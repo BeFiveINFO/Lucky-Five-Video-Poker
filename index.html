@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lucky Five</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline%7CBungee" rel="stylesheet">
+</head>
+<body>
+	<div id="content">
+		<hr class="style-seven">
+		<!-- pay table -->
+		<div id="paytable">
+			<table class="">
+				<tr id="row-1" class="hand-code-0">
+					<td class="col-1 hand-name">Five of a kind</td>
+					<td class="col-2">250</td>
+					<td class="col-3">500</td>
+					<td class="col-4">750</td>
+					<td class="col-5">2250</td>
+					<td class="col-6">5000</td>
+				</tr>
+				<tr id="row-2" class="hand-code-1">
+					<td class="col-1 hand-name">Royal Straight</td>
+					<td class="col-2">100</td>
+					<td class="col-3">200</td>
+					<td class="col-4">300</td>
+					<td class="col-5">900</td>
+					<td class="col-6">1000</td>
+				</tr>
+				<tr id="row-3" class="hand-code-1">
+					<td class="col-1 hand-name">Straight flush</td>
+					<td class="col-2">40</td>
+					<td class="col-3">80</td>
+					<td class="col-4">120</td>
+					<td class="col-5">360</td>
+					<td class="col-6">400</td>
+				</tr>
+				<tr id="row-4" class="hand-code-2">
+					<td class="col-1 hand-name">Four of a kind</td>
+					<td class="col-2">20</td>
+					<td class="col-3">40</td>
+					<td class="col-4">60</td>
+					<td class="col-5">180</td>
+					<td class="col-6">200</td>
+				</tr>
+				<tr id="row-5" class="hand-code-3">
+					<td class="col-1 hand-name">Full house</td>
+					<td class="col-2">8</td>
+					<td class="col-3">16</td>
+					<td class="col-4">24</td>
+					<td class="col-5">72</td>
+					<td class="col-6">80</td>
+				</tr>
+				<tr id="row-6" class="hand-code-4">
+					<td class="col-1 hand-name">Flush</td>
+					<td class="col-2">5</td>
+					<td class="col-3">10</td>
+					<td class="col-4">15</td>
+					<td class="col-5">45</td>
+					<td class="col-6">50</td>
+				</tr>
+				<tr id="row-7" class="hand-code-5">
+					<td class="col-1 hand-name">Straight</td>
+					<td class="col-2">4</td>
+					<td class="col-3">8</td>
+					<td class="col-4">12</td>
+					<td class="col-5">36</td>
+					<td class="col-6">40</td>
+				</tr>
+				<tr id="row-8" class="hand-code-6">
+					<td class="col-1 hand-name">Three of a kind</td>
+					<td class="col-2">2</td>
+					<td class="col-3">4</td>
+					<td class="col-4">6</td>
+					<td class="col-5">18</td>
+					<td class="col-6">20</td>
+				</tr>
+				<tr id="row-9"  class="hand-code-7">
+					<td class="col-1 hand-name">Two pair</td>
+					<td class="col-2">1</td>
+					<td class="col-3">2</td>
+					<td class="col-4">3</td>
+					<td class="col-5">9</td>
+					<td class="col-6">10</td>
+				</tr>
+			</table>
+		</div>
+		<!-- hands -->
+		<div class="card-holder">
+			<div class="card-unit">
+				<div class="playing-card" id="playing-card-1">
+					<img class="card-back" nopin = "nopin" src="cards/cardBack.png">
+					<img class="card-face" nopin = "nopin" id="hand-1" src="cards/cardBack.png">
+				</div>
+				<button class="hold-button inactive" id="hold-1">HOLD</button>
+			</div>
+			<div class="card-unit">
+				<div class="playing-card" id="playing-card-2">
+					<img class="card-back" nopin = "nopin" src="cards/cardBack.png">
+					<img class="card-face" nopin = "nopin" id="hand-2" src="cards/cardBack.png">
+				</div>
+				<button class="hold-button inactive" id="hold-2">HOLD</button>
+			</div>
+			<div class="card-unit">
+				<div class="playing-card" id="playing-card-3">
+					<img class="card-back" nopin = "nopin" src="cards/cardBack.png">
+					<img class="card-face" nopin = "nopin" id="hand-3" src="cards/cardBack.png">
+				</div>
+				<button class="hold-button inactive" id="hold-3">HOLD</button>
+			</div>
+			<div class="card-unit">
+				<div class="playing-card" id="playing-card-4">
+					<img class="card-back" nopin = "nopin" src="cards/cardBack.png">
+					<img class="card-face" nopin = "nopin" id="hand-4" src="cards/cardBack.png">
+				</div>
+				<button class="hold-button inactive" id="hold-4">HOLD</button>
+			</div>
+			<div class="card-unit">
+				<div class="playing-card" id="playing-card-5">
+					<img class="card-back" nopin = "nopin" src="cards/cardBack.png">
+					<img class="card-face" nopin = "nopin" id="hand-5" src="cards/cardBack.png">
+				</div>
+				<button class="hold-button inactive" id="hold-5">HOLD</button>
+			</div>
+		</div>
+		<!-- display -->
+		<div id="display">
+			<div class="left">
+				<span class="label">WAGER</span><span class="left-margin" id="wager_counter">WAIT</span><br>
+				<span class="label">WIN</span><span class="left-margin" id="win_counter">0</span>
+
+			</div>
+			<div class="center" id="game-message"></div>
+			<div class="right"><span class="label">Credits</span><br><span id="credit_counter">WAIT</span></div>
+		</div>
+		<!-- control / display -->
+		<div id="control-panel">
+			<button id='bet'>BET</button>
+			<button id='start' class="inactive">WAIT</button>
+		</div>
+		<div class="footer">
+			<p><a href="http://play.befive.info/">©2017 BeFive.Info</a></p>
+		</div>
+	</div>
+	<textarea id="console" style="display:none;">Press Start</textarea>
+	<!-- scripts -->
+	<script src="scripts/lib/jquery-3.2.1.min.js"></script>
+	<script src="scripts/lib/preloadjs-0.6.2.min"></script>
+	<script src="scripts/lib/Tone.min.js"></script>
+
+	<script src="scripts/controls.js"></script>
+</body>
+</html>
