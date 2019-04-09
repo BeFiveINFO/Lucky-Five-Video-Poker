@@ -1,7 +1,8 @@
 # Lucky Five Video Poker
-Online Demo is available at http://play.befive.info/lucky-five/
-
 This is a very primitive example of video poker with php session keeping track of user credits. Please feel free to do anything about this code and all.
+
+## Requirements
+- A web server that can run PHP.
 
 ## To try this script
 
